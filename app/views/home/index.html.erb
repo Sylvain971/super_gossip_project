@@ -12,6 +12,7 @@
 		<tr>
 			<td><%= gossip.title %></td>
 			<td><%= gossip.content %></td>
+			<td><%= gossip.moussaillon.anonymous_username %></td>
 			<td><%= link_to 'Show', gossip_path(gossip) %></td>
      		<td><%= link_to 'Edit', edit_gossip_path(gossip) %></td>
       		<td><%= link_to 'Destroy', gossip_path(gossip),

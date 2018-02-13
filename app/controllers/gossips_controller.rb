@@ -4,7 +4,7 @@ class GossipsController < ApplicationController
 	end
 
 	def new
-		@gossip = Gossip.new
+		@gossip = current_moussaillon.gossips.build
 	end
 
 	def create

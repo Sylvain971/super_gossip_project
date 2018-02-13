@@ -1,0 +1,40 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<ul>
+<% if moussaillon_signed_in? %>
+	<table>
+  		<tr>
+   	 		<th>Titre</th>
+    		<th>Contenu</th>
+  		</tr>
+		<% @gossips.each do |gossip| %>
+		<tr>
+			<td><%= gossip.title %></td>
+			<td><%= gossip.content %></td>
+			<td><%= link_to 'Show', gossip_path(gossip) %></td>
+     		<td><%= link_to 'Edit', edit_gossip_path(gossip) %></td>
+      		<td><%= link_to 'Destroy', gossip_path(gossip),
+              		method: :delete,
+              		data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<%end%>
+	</table>
+
+<li>
+<%= link_to "Sign Out", destroy_moussaillon_session_path, method: :delete %>
+</li>
+
+<li>
+	<%= link_to "Edit Account", edit_moussaillon_registration_path %>
+</li>
+<% else %>
+<li>
+<%= link_to "Sign In", new_moussaillon_session_path %>
+</li>
+<li>
+<%= link_to "Sign Up", new_moussaillon_registration_path %>
+</li>
+</ul>
+
+<%end%>

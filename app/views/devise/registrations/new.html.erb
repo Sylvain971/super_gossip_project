@@ -1,4 +1,9 @@
-<h2>Sign up</h2>
+<h2>Rejoins-nous pour ne rien manquer...</h2>
+
+<div class ="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-6">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -7,7 +12,6 @@
     <%= f.label :anonymous_username %><br />
     <%= f.text_field :anonymous_username, autocomplete: "anonymous_user" %>
   </div>
-
 
   <div class="field">
     <%= f.label :email %><br />
@@ -36,5 +40,7 @@
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
-
 <%= render "devise/shared/links" %>
+</div>
+</div>
+<div class="col"></div>

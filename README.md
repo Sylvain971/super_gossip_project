@@ -1,24 +1,9 @@
-# README
+Hello, 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mon site : https://rocky-coast-40702.herokuapp.com/
 
-Things you may want to cover:
+Tout marche, je n'ai pas fait les tests. 
 
-* Ruby version
+Mon css est un peu pété, je découvre tout ça et c'est la première fois que je tente quelques trucs !
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonne correction !

@@ -8,7 +8,7 @@ class Moussaillon < ApplicationRecord
 
   USERNAME_REGEX = /\A[a-zA-Z@]+\z/
 
- 	 before_save { anonymous_username.downcase! }
+ 	#before_save { anonymous_username.downcase! }
 	 
  	 validates :anonymous_username,
  	   presence: true,
